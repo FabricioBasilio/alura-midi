@@ -17,4 +17,9 @@ for (let contador = 0; contador < teclas.length; contador++) {
     tecla.addEventListener("click", function() {
         tocarSom(idAudio);
     });
+
+    tecla.addEventListener("keydown", function() {
+        // tocarSom(idAudio);   
+        tecla.classList.add("ativa");
+    });
 }
